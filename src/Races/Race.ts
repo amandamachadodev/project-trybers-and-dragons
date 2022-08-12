@@ -1,10 +1,12 @@
 abstract class Race {
+  private readonly _name: string;
+  private readonly _dexterity: number;
   constructor(
-    private readonly _name: string,
-    private readonly _dexterity: number,
+    name: string,
+    dexterity: number,
   ) {
-    this._name = _name;
-    this._dexterity = _dexterity;
+    this._name = name;
+    this._dexterity = dexterity;
   }
 
   get name(): string {
